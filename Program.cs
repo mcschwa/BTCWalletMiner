@@ -6,6 +6,10 @@ class Program
 	static void Main(string[] args)
 	{
 		var Settings = new Settings();
-		Console.WriteLine(Settings.ProgramLogo);
+		Settings.displayLogo();
+		Settings.setColors();
+		Settings.displayVersion();
+		Settings.displayCredits();
+		Console.ReadKey();
 	}
 }
