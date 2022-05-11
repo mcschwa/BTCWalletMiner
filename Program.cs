@@ -75,16 +75,22 @@ class Program
 		var BTCcoinAddress = new BitcoinAddress();
 		Random rnd = new Random();
 
+		int randomNumber()
+		{
+			int number = rnd.Next(BTCcoinAddress.minLength, BTCcoinAddress.maxLength);
+			return number;
+		}
+
 		string randomBtcAddress(int length)
 		{
 			const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 			return new string(Enumerable.Repeat(chars, length).Select(s => s[rnd.Next(s.Length)]).ToArray());
 		}
 
-		int randomNumber()
+		double btcAmountWon()
 		{
-			int number = rnd.Next(BTCcoinAddress.minLength, BTCcoinAddress.maxLength);
-			return number;
+			double BTC = (rnd.NextDouble());
+			return BTC;
 		}
 
 		while (Mine)
@@ -93,7 +99,22 @@ class Program
 			Console.ForegroundColor = ConsoleColor.DarkCyan;
 			Console.Write("[+]");
 			Console.ResetColor();
-			Console.Write(" " + randomBtcAddress(randomNumber()));
+			Console.Write(" " + randomBtcAddress(randomNumber()) + " ");
+			if (rnd.Next(0, 100) == 0)
+			{
+				Mine = false;
+
+				Console.ForegroundColor = ConsoleColor.Green;
+				Console.Write("(" + btcAmountWon() + " BTC)");
+				Console.ResetColor();
+				Console.ReadKey();
+			}
+			else
+			{
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.Write("(0 BTC)");
+				Console.ResetColor();
+			}
 			Console.WriteLine("");
 		}
 	}
