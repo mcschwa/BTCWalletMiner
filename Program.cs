@@ -9,8 +9,8 @@ class Program
 		Settings.displayLogo();
 		Settings.setColors();
 		Settings.displayVersion();
-		Settings.displayCredits();
 		Settings.displayFee();
+		Settings.displayCredits();
 
 		requestBitcoinAddress();
 	}
@@ -23,7 +23,7 @@ class Program
 		void inputUser()
 		{
 			var Settings = new Settings();
-			var BTCcoinAddress = new BitcoinAddress(); 
+			var BTCcoinAddress = new BitcoinAddress();
 			string userInput = Console.ReadLine();
 
 			if (userInput.Length >= BTCcoinAddress.minLength && userInput.Length <= BTCcoinAddress.maxLength)
@@ -56,7 +56,8 @@ class Program
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine("Address confirmed.");
 				Console.ResetColor();
-				Console.ReadKey();
+
+				mineBtc();
 			}
 			else
 			{
@@ -65,6 +66,35 @@ class Program
 				Console.ResetColor();
 				requestBitcoinAddress();
 			}
+		}
+	}
+
+	public void mineBtc()
+	{
+		Boolean Mine = true;
+		var BTCcoinAddress = new BitcoinAddress();
+		Random rnd = new Random();
+
+		string randomBtcAddress(int length)
+		{
+			const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+			return new string(Enumerable.Repeat(chars, length).Select(s => s[rnd.Next(s.Length)]).ToArray());
+		}
+
+		int randomNumber()
+		{
+			int number = rnd.Next(BTCcoinAddress.minLength, BTCcoinAddress.maxLength);
+			return number;
+		}
+
+		while (Mine)
+		{
+			Thread.Sleep(100);
+			Console.ForegroundColor = ConsoleColor.DarkCyan;
+			Console.Write("[+]");
+			Console.ResetColor();
+			Console.Write(" " + randomBtcAddress(randomNumber()));
+			Console.WriteLine("");
 		}
 	}
 

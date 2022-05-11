@@ -4,7 +4,7 @@ namespace ProgramSettings
 	public class Settings
 	{
 		public static BitcoinAddress userBitcoinAddress = new BitcoinAddress();
-		public static double ProgramVersion = 0.1;
+		public static string ProgramVersion = "0.3.5";
 		public string ProgramLogo = @"
 			______ _____ _____ _    _       _ _      _  ___  ____                 
 			| ___ \_   _/  __ \ |  | |     | | |    | | |  \/  (_)                
@@ -35,10 +35,9 @@ namespace ProgramSettings
 
 		public void displayFee()
 		{
-			Random rnd = new Random(3);
-			int number = 0;
-			number = rnd.Next();
-			Console.WriteLine("Current fee: " + 0 + "." + number + " BTC");
+			Random rnd = new Random();
+			int number = rnd.Next(1, 10);
+			Console.WriteLine("Current fee: 0.0000" + number + " BTC");
 		}
 
 		public void setColors()
