@@ -1,7 +1,9 @@
+using ProgramBitcoin;
 namespace ProgramSettings
 {
 	public class Settings
 	{
+		public static BitcoinAddress userBitcoinAddress = new BitcoinAddress();
 		public static double ProgramVersion = 0.1;
 		public string ProgramLogo = @"
 			______ _____ _____ _    _       _ _      _  ___  ____                 
@@ -21,7 +23,8 @@ namespace ProgramSettings
 
 		public void displayVersion()
 		{
-			Console.WriteLine("Current version: v" + ProgramVersion);
+			string ProgramVersionFixed = ProgramVersion.ToString().Replace(",", "."); //issue: comma instead of dot!
+			Console.WriteLine("Current version: v" + ProgramVersionFixed);
 		}
 
 		public void displayCredits()
@@ -34,6 +37,11 @@ namespace ProgramSettings
 		{
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.ForegroundColor = ConsoleColor.White;
+		}
+
+		public void setAddress(string addressString)
+		{
+			userBitcoinAddress.setAddress(addressString);
 		}
 	}
 }
