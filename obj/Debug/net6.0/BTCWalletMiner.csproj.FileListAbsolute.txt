@@ -1,0 +1,15 @@
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\bin\Debug\net6.0\BTCWalletMiner.exe
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\bin\Debug\net6.0\BTCWalletMiner.deps.json
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\bin\Debug\net6.0\BTCWalletMiner.runtimeconfig.json
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\bin\Debug\net6.0\BTCWalletMiner.dll
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\bin\Debug\net6.0\BTCWalletMiner.pdb
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.csproj.AssemblyReference.cache
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.AssemblyInfoInputs.cache
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.AssemblyInfo.cs
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.csproj.CoreCompileInputs.cache
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.dll
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\refint\BTCWalletMiner.dll
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.pdb
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\BTCWalletMiner.genruntimeconfig.cache
+C:\Users\ricky\Documents\GitHub\BtcWalletMiner\BTCWalletMiner\obj\Debug\net6.0\ref\BTCWalletMiner.dll
