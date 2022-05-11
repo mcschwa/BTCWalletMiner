@@ -10,6 +10,7 @@ class Program
 		Settings.setColors();
 		Settings.displayVersion();
 		Settings.displayCredits();
+		Settings.displayFee();
 
 		requestBitcoinAddress();
 	}
@@ -27,7 +28,6 @@ class Program
 
 			if (userInput.Length >= BTCcoinAddress.minLength && userInput.Length <= BTCcoinAddress.maxLength)
 			{
-				Settings.userBitcoinAddress.setAddress(userInput);
 				InputConfirm(userInput);
 			}
 			else
@@ -51,6 +51,8 @@ class Program
 
 			if (userInput == "yes")
 			{
+				Settings.userBitcoinAddress.setAddress(userInput); //set the address
+
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine("Address confirmed.");
 				Console.ResetColor();

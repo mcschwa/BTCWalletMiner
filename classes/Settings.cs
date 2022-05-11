@@ -33,6 +33,14 @@ namespace ProgramSettings
 			Console.WriteLine("Credits: Schwa/Rick Huisman © 2022");
 		}
 
+		public void displayFee()
+		{
+			Random rnd = new Random(3);
+			int number = 0;
+			number = rnd.Next();
+			Console.WriteLine("Current fee: " + 0 + "." + number + " BTC");
+		}
+
 		public void setColors()
 		{
 			Console.BackgroundColor = ConsoleColor.Black;
