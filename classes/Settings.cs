@@ -38,10 +38,5 @@ namespace ProgramSettings
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.ForegroundColor = ConsoleColor.White;
 		}
-
-		public void setAddress(string addressString)
-		{
-			userBitcoinAddress.setAddress(addressString);
-		}
 	}
 }

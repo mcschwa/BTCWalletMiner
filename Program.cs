@@ -19,6 +19,23 @@ class Program
 		Console.Write("Please enter your Bitcoin address: ");
 		inputUser();
 
+		void inputUser()
+		{
+			var Settings = new Settings();
+			var BTCcoinAddress = new BitcoinAddress(); 
+			string userInput = Console.ReadLine();
+
+			if (userInput.Length >= BTCcoinAddress.minLength && userInput.Length <= BTCcoinAddress.maxLength)
+			{
+				Settings.userBitcoinAddress.setAddress(userInput);
+				InputConfirm(userInput);
+			}
+			else
+			{
+				inputInvalid();
+			}
+		}
+
 		void inputInvalid()
 		{
 			Console.ForegroundColor = ConsoleColor.Red;
@@ -27,18 +44,24 @@ class Program
 			requestBitcoinAddress();
 		}
 
-		void inputUser()
+		void InputConfirm(string address)
 		{
-			var BTCcoinAddress = new BitcoinAddress(); 
-			string userInput = Console.ReadLine().ToString();
+			Console.Write("Do you confirm that " + address + " is your address: ");
+			string userInput = Console.ReadLine();
 
-			if (userInput.Length >= BTCcoinAddress.minLength)
+			if (userInput == "yes")
 			{
-				Console.WriteLine(userInput);
+				Console.ForegroundColor = ConsoleColor.Green;
+				Console.WriteLine("Address confirmed.");
+				Console.ResetColor();
+				Console.ReadKey();
 			}
 			else
 			{
-				inputInvalid();
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine("Address not confirmed.");
+				Console.ResetColor();
+				requestBitcoinAddress();
 			}
 		}
 	}
