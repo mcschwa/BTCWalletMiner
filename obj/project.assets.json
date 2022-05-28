@@ -8,24 +8,31 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ricky\\.nuget\\packages\\": {}
+    "C:\\Users\\ricky\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricky\\Documents\\GitHub\\BtcWalletMiner\\BTCWalletMiner\\BTCWalletMiner.csproj",
+      "projectUniqueName": "C:\\Users\\ricky\\OneDrive\\Documenten\\Code\\Laravel\\mpa-jukebox\\BTCWalletMiner\\BTCWalletMiner.csproj",
       "projectName": "BTCWalletMiner",
-      "projectPath": "C:\\Users\\ricky\\Documents\\GitHub\\BtcWalletMiner\\BTCWalletMiner\\BTCWalletMiner.csproj",
+      "projectPath": "C:\\Users\\ricky\\OneDrive\\Documenten\\Code\\Laravel\\mpa-jukebox\\BTCWalletMiner\\BTCWalletMiner.csproj",
       "packagesPath": "C:\\Users\\ricky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricky\\Documents\\GitHub\\BtcWalletMiner\\BTCWalletMiner\\obj\\",
+      "outputPath": "C:\\Users\\ricky\\OneDrive\\Documenten\\Code\\Laravel\\mpa-jukebox\\BTCWalletMiner\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ricky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
