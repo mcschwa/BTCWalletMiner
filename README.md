@@ -1,6 +1,6 @@
 ## BTCWalletMiner
 
-![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/schwaaaa/BTCWalletMiner.svg)
-![Percentage of issues still open](http://isitmaintained.com/badge/open/schwaaaa/BTCWalletMiner.svg)
-
 ![Size](https://img.shields.io/github/languages/code-size/schwaaaa/BTCWalletMiner?style=for-the-badge)
+![Files](https://img.shields.io/github/directory-file-count/schwaaaa/BTCWalletMiner?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/schwaaaa/BTCWalletMiner?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/schwaaaa/BTCWalletMiner?style=for-the-badge)
