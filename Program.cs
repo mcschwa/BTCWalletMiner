@@ -1,8 +1,15 @@
-﻿using ProgramSettings;
-using ProgramBitcoin;
+﻿using BTCWalletMiner.Models;
+using BTCWalletMiner.Services;
 
 class Program
 {
+	private readonly ConsoleService _consoleService;
+
+    private Program(ConsoleService consoleService)
+    {
+		_consoleService = consoleService;
+    }
+
 	public void Entry()
 	{
 		var Settings = new Settings();
@@ -38,10 +45,8 @@ class Program
 
 		void inputInvalid()
 		{
-			Console.ForegroundColor = ConsoleColor.Red;
-			Console.WriteLine("Input invalid. Please try again");
-			Console.ResetColor();
-			requestBitcoinAddress();
+            _consoleService.ColorThenWriteAndReset(ConsoleColor.Red, "Input invalid. Please try again");
+            requestBitcoinAddress();
 		}
 
 		void InputConfirm(string address)
@@ -51,19 +56,15 @@ class Program
 
 			if (userInput == "yes")
 			{
-				Settings.userBitcoinAddress.setAddress(userInput); //set the address
+				Settings.userBitcoinAddress.SetAddress(userInput); //set the address
 
-				Console.ForegroundColor = ConsoleColor.Green;
-				Console.WriteLine("Address confirmed.");
-				Console.ResetColor();
+                _consoleService.ColorThenWriteAndReset(ConsoleColor.Green, "Address confirmed.");
 
 				mineBtc();
 			}
 			else
 			{
-				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine("Address not confirmed.");
-				Console.ResetColor();
+                _consoleService.ColorThenWriteAndReset(ConsoleColor.Red, "Address not confirmed.");
 				requestBitcoinAddress();
 			}
 		}
@@ -96,24 +97,18 @@ class Program
 		while (Mine)
 		{
 			Thread.Sleep(100);
-			Console.ForegroundColor = ConsoleColor.DarkCyan;
-			Console.Write("[+]");
-			Console.ResetColor();
+            _consoleService.ColorThenWriteAndReset(ConsoleColor.DarkCyan, "[+]");
 			Console.Write(" " + randomBtcAddress(randomNumber()) + " ");
 			if (rnd.Next(0, 100) == 0)
 			{
 				Mine = false;
-
-				Console.ForegroundColor = ConsoleColor.Green;
-				Console.Write("(" + btcAmountWon() + " BTC)");
-				Console.ResetColor();
+				
+                _consoleService.ColorThenWriteAndReset(ConsoleColor.Green, "(" + btcAmountWon() + " BTC)");
 				Console.ReadKey();
 			}
 			else
 			{
-				Console.ForegroundColor = ConsoleColor.Red;
-				Console.Write("(0 BTC)");
-				Console.ResetColor();
+                _consoleService.ColorThenWriteAndReset(ConsoleColor.Red, "(0 BTC)");
 			}
 			Console.WriteLine("");
 		}
@@ -121,7 +116,7 @@ class Program
 
 	static void Main(string[] args)
 	{
-		var Program = new Program();
-		Program.Entry();
+		var program = new Program(new ConsoleService());
+        program.Entry();
 	}
 }
