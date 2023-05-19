@@ -1,6 +1,4 @@
-## BTCWalletMiner
-
-![image](https://github.com/schwaaaa/BTCWalletMiner/assets/96921300/d47e1f6d-3597-4a9d-8ac5-b2e944f6adc9)
+![image](https://github.com/schwaaaa/BTCWalletMiner/assets/96921300/53d6991d-c9d3-4ae7-aa6e-e6b48fb60c07)
 
 
 ![MadeIn](https://img.shields.io/badge/Made%20in-C%23-brightgreen)
