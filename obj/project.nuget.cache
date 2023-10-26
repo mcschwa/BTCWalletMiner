@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nluDD170BvnAYYZoJyXdAPkOG/sa4PNVUIOYTxpDRhYbPBlTNxx9Zykhk+i4l38pERFGGlfSmzzIXySSOsTB+Q==",
+  "dgSpecHash": "RZcPmv2A4ueDaTUT2IZInn99Sxz7JgfSZNxux8HIRhiRnscW9FgAYZ0a7SrzBvT/P8R6pKPP3o8eGB3w4uJJww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ricky\\OneDrive\\Documenten\\Code\\Laravel\\mpa-jukebox\\BTCWalletMiner\\BTCWalletMiner.csproj",
+  "projectFilePath": "D:\\BTCWalletMiner\\BTCWalletMiner.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
