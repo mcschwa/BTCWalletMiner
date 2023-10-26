@@ -1,5 +1,11 @@
-![image](https://github.com/schwaaaa/BTCWalletMiner/assets/96921300/53d6991d-c9d3-4ae7-aa6e-e6b48fb60c07)
-
+<h1 style="text-align: center">
+	______ _____ _____ _    _       _ _      _  ___  ____                 
+	| ___ \_   _/  __ \ |  | |     | | |    | | |  \/  (_)                
+	| |_/ / | | | /  \/ |  | | __ _| | | ___| |_| .  . |_ _ __   ___ _ __ 
+	| ___ \ | | | |   | |/\| |/ _` | | |/ _ \ __| |\/| | | '_ \ / _ \ '__|
+	| |_/ / | | | \__/\  /\  / (_| | | |  __/ |_| |  | | | | | |  __/ |   
+	\____/  \_/  \____/\/  \/ \__,_|_|_|\___|\__\_|  |_/_|_| |_|\___|_|   
+</h1>
 
 <p align="center">
 	<img src="https://img.shields.io/badge/Made%20in-C%23-brightgreen" alt="Badge 1"/>
