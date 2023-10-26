@@ -263,7 +263,7 @@ FakesAssemblies/
 *.opt
 
 # Visual Studio Code
-*.vscode
+*.vscode/
 
 # Github, too
-*.github
+*.github/
