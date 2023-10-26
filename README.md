@@ -1,11 +1,4 @@
-<h1 style="text-align: center">
-	______ _____ _____ _    _       _ _      _  ___  ____                 
-	| ___ \_   _/  __ \ |  | |     | | |    | | |  \/  (_)                
-	| |_/ / | | | /  \/ |  | | __ _| | | ___| |_| .  . |_ _ __   ___ _ __ 
-	| ___ \ | | | |   | |/\| |/ _` | | |/ _ \ __| |\/| | | '_ \ / _ \ '__|
-	| |_/ / | | | \__/\  /\  / (_| | | |  __/ |_| |  | | | | | |  __/ |   
-	\____/  \_/  \____/\/  \/ \__,_|_|_|\___|\__\_|  |_/_|_| |_|\___|_|   
-</h1>
+# BTCWM -> BTCWalletMiner
 
 <p align="center">
 	<img src="https://img.shields.io/badge/Made%20in-C%23-brightgreen" alt="Badge 1"/>
@@ -13,3 +6,19 @@
 	<img src="https://img.shields.io/github/v/release/schwaaaa/BTCWalletMiner?color=%23004440&include_prereleases" alt="Badge 3"/>
 	<img src="https://img.shields.io/github/last-commit/schwaaaa/BTCWalletMiner" alt="Badge 4"/>
 </p>
+
+> A tool created to mine bitcoin wallets.
+
+## Table of Contents
+* [Introduction](#introduction)
+* [Setup](#setup)
+* [Usage](#usage)
+
+## Introduction
+To ensure that the future of BTC and BTC wallets can thrive, I've created a tool to test this.
+
+## Setup
+<p><i>TODO: Implement<p></p>
+
+## Usage
+<p><i>TODO: Implement<p></p>
