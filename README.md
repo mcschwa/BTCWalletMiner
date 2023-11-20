@@ -1,4 +1,5 @@
 # BTCWM -> BTCWalletMiner
+> A tool created to mine bitcoin wallets.
 
 <p align="center">
 	<img src="https://img.shields.io/badge/Made%20in-C%23-brightgreen" alt="Badge 1"/>
@@ -6,8 +7,6 @@
 	<img src="https://img.shields.io/github/v/release/schwaaaa/BTCWalletMiner?color=%23004440&include_prereleases" alt="Badge 3"/>
 	<img src="https://img.shields.io/github/last-commit/schwaaaa/BTCWalletMiner" alt="Badge 4"/>
 </p>
-
-> A tool created to mine bitcoin wallets.
 
 ## Table of Contents
 * [Introduction](#introduction)
